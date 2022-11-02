@@ -1,0 +1,35 @@
+<ion-content>
+
+  <ion-title class="ion-padding-top ion-text-center">
+    <ion-label>
+      <h1>SkeletonAPP</h1>
+      <p>Aqui comienza todo</p>
+    </ion-label>
+  </ion-title>
+
+  <div class="ion-padding-vertical">
+ 
+    <ion-card class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h1>Bienvenido!</h1>
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="login.Usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" >Password</ion-label>
+         
+          <ion-input type="password" [(ngModel)]="login.Password"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+      <ion-button shape="block" (click)="registrar()">Registrarse</ion-button>
+    </ion-card>
+  </div>
+  
+</ion-content>
+
